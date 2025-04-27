@@ -1,17 +1,17 @@
 
 # Kubernetes - kube-proxy Explained with Examples
 
-## ✨ kube-proxy in Simple Words
+##  kube-proxy in Simple Words
 
 - **kube-proxy** runs **on every Kubernetes node**.
 - It ensures that **network traffic** reaches the correct Pod.
 - It manages **iptables** (or **ipvs** / **eBPF**) rules on the node.
 
-> ✨ kube-proxy is responsible for **routing** and **load balancing** traffic to the correct Pods behind a Service.
+>  kube-proxy is responsible for **routing** and **load balancing** traffic to the correct Pods behind a Service.
 
 ---
 
-# ✨ kube-proxy Common Examples
+#  kube-proxy Common Examples
 
 ## Example 1: Service Type: ClusterIP
 
@@ -79,7 +79,7 @@ When kube-proxy receives traffic:
 
 ---
 
-# ✨ Quick Traffic Flow Visuals
+#  Quick Traffic Flow Visuals
 
 ## NodePort Access (External -> Internal)
 
@@ -98,7 +98,7 @@ Pod A -> my-service:80
 
 ---
 
-# ✨ kube-proxy Modes
+#  kube-proxy Modes
 
 - **iptables** (default): Uses Linux iptables.
 - **ipvs**: More efficient, uses Linux IPVS for load balancing.
